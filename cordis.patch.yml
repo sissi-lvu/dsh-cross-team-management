@@ -1,0 +1,5 @@
+# 跨团队管理：共享目录周报 → 红黄绿灯 / 自动催办 / 逾期升级 / 全员通报 / 邮件外发
+# 目录与团队表放在同目录的 config.json（从 config.example.json 复制），改完下次扫描自动生效
+- insert:
+    - id: cross-team-management
+      name: cross-team-management

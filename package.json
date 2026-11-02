@@ -1,0 +1,40 @@
+{
+  "name": "cross-team-management",
+  "version": "1.5.0",
+  "private": true,
+  "description": "跨团队管理：扫描共享目录里的团队周报，按红黄绿灯汇总事实、自动催办、逾期升级与全员通报；附带只读 Web 面板。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "domain.mjs",
+    "client.js",
+    "cordis.patch.yml",
+    "config.example.json",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "INSTALL.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,42 @@
+{
+  "rootDir": "/absolute/path/to/shared/2026-W44",
+  "label": "2026-W44",
+  "deadline": "2026-10-29T18:00:00+08:00",
+  "adviceMode": "hint",
+  "email": {
+    "enabled": true,
+    "from": "you@example.com",
+    "fromName": "跨团队管理",
+    "digestTo": [
+      "boss@example.com"
+    ],
+    "subjectPrefix": "[周报台]",
+    "signature": ""
+  },
+  "teams": [
+    {
+      "id": "A_group",
+      "name": "产品A组",
+      "focus": "拉新增长",
+      "email": "a-team@example.com"
+    },
+    {
+      "id": "B_group",
+      "name": "研发B组",
+      "focus": "支付重构",
+      "email": "b-team@example.com"
+    },
+    {
+      "id": "C_group",
+      "name": "测试C组",
+      "focus": "质量保障",
+      "email": ""
+    },
+    {
+      "id": "D_group",
+      "name": "运营D组",
+      "focus": "核心拉新指标",
+      "email": ""
+    }
+  ]
+}

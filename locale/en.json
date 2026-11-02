@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cross-Team Management",
+    "description": "Scans team weekly reports in a shared folder, filters filler, summarizes by red/yellow/green, nags teams that did not submit, escalates overdue ones, and drafts a sanitized weekly digest."
+  }
+}
