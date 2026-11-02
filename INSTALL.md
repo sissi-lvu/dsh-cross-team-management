@@ -10,11 +10,14 @@
 任选一种：
 
 ```bash
-# A. 从目录（拿到的是源码或解压后的目录）
-dsh plugin --profile <你的profile名> add /绝对路径/cross-team-management
+# A. 从 GitHub 直接装
+dsh plugin --profile <你的 profile> add github:sissi-lvu/cross-team-management
 
-# B. 从压缩包
-dsh plugin --profile <你的profile名> add /绝对路径/cross-team-management-1.1.0.tgz
+# B. 从 Release 里的压缩包
+dsh plugin --profile <你的 profile> add /path/to/cross-team-management-1.5.1.tgz
+
+# C. 从 clone 下来的目录
+dsh plugin --profile <你的 profile> add ./cross-team-management
 ```
 
 也可以在 DSH 的插件管理里选「安装 bundle」，指向目录或 tgz。

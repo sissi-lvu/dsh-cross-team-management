@@ -16,10 +16,20 @@
 ## 安装
 
 ```bash
-dsh plugin --profile web add /Users/sissi/Documents/deepseek-harness/default-workspace/cross-team-management
+# 1) 从 GitHub 直接装（推荐）
+dsh plugin --profile <你的 profile> add github:sissi-lvu/cross-team-management
+
+# 2) 或者下载 Release 里的 .tgz
+dsh plugin --profile <你的 profile> add /path/to/cross-team-management-1.5.1.tgz
+
+# 3) 或者先 clone，再指向目录
+git clone https://github.com/sissi-lvu/cross-team-management.git
+dsh plugin --profile <你的 profile> add ./cross-team-management
 ```
 
-或在插件管理里 `install_bundle` 指向这个目录。profile 用 `link:` 关联，改代码后重新挂载即可生效。
+装完**重启一次** `dsh web`（Host 模块与侧栏面板在启动时加载），再把 `config.example.json` 复制成 `config.json` 填共享目录与团队。
+
+目录安装是 `link:` 关联，改代码后重启即可；从 GitHub 或 tgz 安装的，更新时重新 `add` 一遍覆盖。
 
 ## 配置
 
