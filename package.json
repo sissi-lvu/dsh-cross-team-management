@@ -1,8 +1,8 @@
 {
   "name": "cross-team-management",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "private": true,
-  "description": "跨团队管理：扫描共享目录里的团队周报，按红黄绿灯汇总事实、自动催办、逾期升级与全员通报；附带只读 Web 面板。",
+  "description": "跨团队管理：上下文管理在周报场景的落地——过滤团队周报流水账，按进展/卡点/计划组装成红黄绿灯上下文，自动注入模型，并支持催办升级与邮件草稿。",
   "type": "module",
   "main": "index.js",
   "exports": {
